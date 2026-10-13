@@ -8,6 +8,8 @@ Todo el código está en `tp3.ipynb`
 
 Requiere Python 3.12 o superior. Desde esta carpeta:
 
+En Windows 11:
+
 ```powershell
 py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
