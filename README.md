@@ -6,7 +6,7 @@ Todo el código está en `tp3.ipynb`
 
 ## Opción A: entorno virtual
 
-Requiere Python 3.10 o superior. Desde esta carpeta:
+Requiere Python 3.12 o superior. Desde esta carpeta:
 
 ```powershell
 py -3.12 -m venv .venv
@@ -16,11 +16,22 @@ pip install -r requirements.txt
 
 En Linux/macOS:
 
+En caso de tener Python 3.12:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
+
+En caso de tener una versión inferior:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv venv --python 3.12 .venv
+source .venv/bin/activate
+uv pip install -r requirements.txt
+```
+
 
 ### Ejecutar en VS Code
 
