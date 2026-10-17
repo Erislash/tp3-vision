@@ -2,7 +2,9 @@
 
 Todo el código está en `tp3.ipynb`
 
-> La notebook usa rutas relativas a su propia carpeta (usa `Path.cwd()`), así que el directorio de trabajo debe ser esta carpeta
+> La notebook usa rutas relativas a su propia carpeta (usa `Path.cwd()`), así que el directorio de trabajo debe ser esta carpeta.
+
+> En la carpeta /data se ubican el ground-truth (data.csv) y las imágenes izquierda (/stereo_example/cam0/) y derecha (/stereo_example/cam1/).
 
 ## Opción A: entorno virtual
 
