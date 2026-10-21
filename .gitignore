@@ -3,3 +3,11 @@ __pycache__/
 .ipynb_checkpoints/
 *.pyc
 figures/
+
+# Imágenes del dataset: solo se versionan las que usan 2a hasta 2e, 2g, 2h y 2k. Para correr correctamente
+# todos los ejercicios, se requieren todas las imagenes del dataset
+data/stereo_example/cam0/*
+data/stereo_example/cam1/*
+!data/stereo_example/cam0/1403636579763555584.png
+!data/stereo_example/cam0/1403636581013555456.png
+!data/stereo_example/cam1/1403636579763555584.png

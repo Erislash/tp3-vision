@@ -5,3 +5,8 @@ __pycache__/
 Dockerfile
 .dockerignore
 figures/
+data/stereo_example/cam0/*
+data/stereo_example/cam1/*
+!data/stereo_example/cam0/1403636579763555584.png
+!data/stereo_example/cam0/1403636581013555456.png
+!data/stereo_example/cam1/1403636579763555584.png

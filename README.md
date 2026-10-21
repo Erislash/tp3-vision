@@ -6,6 +6,8 @@ Todo el código está en `tp3.ipynb`
 
 > En la carpeta /data se ubican el ground-truth (data.csv) y las imágenes izquierda (/stereo_example/cam0/) y derecha (/stereo_example/cam1/).
 
+> Solo se versionan las imágenes que usan los ejericios 2a hasta 2e, 2g, 2h y 2k. Los demás ejercicios usan las imagenes del dataset entero. Colocarlas en data/stereo_example/cam0 y cam1 (probado con MH_01_easy de EuRoC)
+
 ## Opción A: entorno virtual
 
 Requiere Python 3.12 o superior. Desde esta carpeta:
@@ -52,7 +54,7 @@ Desde esta carpeta:
 
 ```bash
 docker build -t tp3 .
-docker run --rm -p 8888:8888 -v "${PWD}/figures:/app/figures" tp3
+docker run --rm -p 8888:8888 -v "${PWD}/figures:/app/figures" -v "${PWD}/data:/app/data" tp3
 ```
 
 Abrimos http://localhost:8888, entrar a `tp3.ipynb` y ejecutar. Con el volumen montado, las figuras generadas aparecen en `figures/` del host.
